@@ -1,9 +1,8 @@
 ---
 ---
 
-$btnLight: green;
+$btnLight: deeppink;
 $btnDark: blue;
-
 
 .btn {
     padding:10px 20px;
@@ -11,7 +10,7 @@ $btnDark: blue;
     border-radius:3px;
     font-size:22px;
 }
- 
+
 .btn-primary {
     background: $btnLight;
     color:white;
