@@ -1,10 +1,6 @@
 ---
 ---
 
-$btnDark: deeppink;
-$btnLight: lightgreen;
-
-
 .btn {
     padding:10px 20px;
     display:inline-block;
@@ -13,11 +9,11 @@ $btnLight: lightgreen;
 }
  
 .btn-primary {
-    background: $btnDark:;
+    background:lightgreen;
     color:white;
 }
 
 .btn-secondary {
-    background: $btnLight;
+    background:deeppink;
     color:white;
 }
