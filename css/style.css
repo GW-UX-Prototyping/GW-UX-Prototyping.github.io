@@ -1,13 +1,33 @@
 .btn {
   padding: 10px 20px;
+  margin: 24px;
   display: inline-block;
   border-radius: 3px;
-  font-size: 22px; }
+  font-size: 22px;
+  text-decoration: none; }
 
 .btn-primary {
   background: deeppink;
   color: white; }
 
 .btn-secondary {
-  background: hotpink;
-  color: white; }
+  border: 2px solid hotpink;
+  color: hotpink; }
+
+.btn-negative {
+  border: 2px solid grey;
+  color: grey; }
+
+.btn-tertiary-a {
+  border: 2px solid lightgrey;
+  background: #F2F2F2;
+  color: grey; }
+
+.btn-tertiary-b {
+  border: 2px solid deeppink;
+  color: deeppink; }
+
+.btn-tertiary-multi {
+  border: 2px solid lightgrey;
+  background: #F2F2F2;
+  color: grey; }

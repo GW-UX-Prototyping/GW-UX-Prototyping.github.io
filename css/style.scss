@@ -1,12 +1,17 @@
 
 $btnLight: deeppink;
 $btnDark: hotpink;
+$btnGrey: grey;
+$btnGreyLight: lightgrey;
+$btnGainsboro: #F2F2F2;
 
 .btn {
     padding:10px 20px;
+    margin: 24px;
     display:inline-block;
     border-radius:3px;
     font-size:22px;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -15,6 +20,28 @@ $btnDark: hotpink;
 }
 
 .btn-secondary {
-    background:$btnDark;
-    color:white;
+    border:2px solid $btnDark;
+    color:$btnDark;
+}
+
+.btn-negative {
+    border:2px solid $btnGrey;
+    color:$btnGrey;
+}
+
+.btn-tertiary-a {
+	border:2px solid $btnGreyLight;
+    background:$btnGainsboro;
+    color:$btnGrey;
+}
+
+.btn-tertiary-b  {
+    border:2px solid $btnLight;
+    color:$btnLight;
+}
+
+.btn-tertiary-multi  {
+	border:2px solid $btnGreyLight;
+    background:$btnGainsboro;
+    color:$btnGrey;
 }
