@@ -1,47 +1,152 @@
-
-$btnLight: deeppink;
-$btnDark: hotpink;
+$btnBase: deeppink;
 $btnGrey: grey;
 $btnGreyLight: lightgrey;
 $btnGainsboro: #F2F2F2;
+$fontBold: 700;
+$fontSemiBold: 600;
+$fontRegular: 400;
+$shadowDown: 0px -1px 1px 0px rgba(191,191,191,1);
+$shadowUp: 0px 1px 1px 0px rgba(191,191,191,1);
 
 .btn {
     padding:10px 20px;
     margin: 24px;
     display:inline-block;
     border-radius:3px;
+    font-family: "Source Sans Pro";
     font-size:22px;
     text-decoration: none;
-}
+    cursor: pointer;
+    border:none;
+    &:focus {
+    outline:none;
+    }
+}   
 
 .btn-primary {
-    background: $btnLight;
+    background: $btnBase;
     color:white;
+    font-weight: $fontBold;
+    &:hover {
+    background: darken($btnBase , 32% );
+    box-shadow: $shadowUp;
+    }
+    &:focus {
+    border: 2px solid darken($btnBase , 32% );
+    padding:8px 18px;
+    }
+    &:active {
+    background: darken($btnBase , 32% );
+    box-shadow: $shadowDown;
+    }
+    &:disabled {
+    background: $btnGreyLight;
+    color: $btnGrey;
+    }
 }
 
 .btn-secondary {
-    border:2px solid $btnDark;
-    color:$btnDark;
+    border:2px solid lighten($btnBase , 28% );
+    color:$btnBase;
+    font-weight: $fontSemiBold;
+    &:hover {
+    background: lighten($btnBase , 44% );
+    border-color: lighten($btnBase , 25% );
+    }
+    &:focus {
+    border-color: $btnBase;
+    }
+    &:active {
+    background: lighten($btnBase , 30% );
+    border-color: lighten($btnBase , 35% );
+    }
+    &:disabled {
+    background: $btnGreyLight;
+    color: $btnGrey;
+    }
 }
 
 .btn-negative {
     border:2px solid $btnGrey;
     color:$btnGrey;
+    font-weight: $fontRegular;
+    &:hover {
+    background: lighten($btnGrey , 44% );
+    border-color: lighten($btnGrey , 25% );
+    }
+    &:focus {
+    border-color: $btnGrey;
+    }
+    &:active {
+    background: lighten($btnGrey , 30% );
+    border-color: lighten($btnGrey , 35% );
+    }
+    &:disabled {
+    background: $btnGreyLight;
+    color: $btnGrey;
+    }
 }
 
 .btn-tertiary-a {
 	border:2px solid $btnGreyLight;
     background:$btnGainsboro;
     color:$btnGrey;
+    &:hover {
+    background: lighten($btnGrey , 44% );
+    border-color: lighten($btnGrey , 25% );
+    }
+    &:focus {
+    border-color: $btnGrey;
+    }
+    &:active {
+    background: lighten($btnGrey , 30% );
+    border-color: lighten($btnGrey , 35% );
+    }
+    &:disabled {
+    background: none;
+    border-color: $btnGreyLight;
+    color: $btnGreyLight;
+    }
 }
 
 .btn-tertiary-b  {
-    border:2px solid $btnLight;
-    color:$btnLight;
+    border:2px solid $btnBase;
+    color:$btnBase;
+    &:hover {
+    background: lighten($btnBase , 44% );
+    border-color: lighten($btnBase , 25% );
+    }
+    &:focus {
+    border-color: $btnBase;
+    }
+    &:active {
+    background: lighten($btnBase , 30% );
+    border-color: lighten($btnBase , 35% );
+    }
+    &:disabled {
+    background: $btnGreyLight;
+    color: $btnGrey;
+    }
 }
 
 .btn-tertiary-multi  {
 	border:2px solid $btnGreyLight;
     background:$btnGainsboro;
     color:$btnGrey;
+    &:hover {
+    background: lighten($btnGrey , 44% );
+    border-color: lighten($btnGrey , 25% );
+    }
+    &:focus {
+    border-color: $btnGrey;
+    }
+    &:active {
+    background: lighten($btnGrey , 30% );
+    border-color: lighten($btnGrey , 35% );
+    }
+    &:disabled {
+    background: none;
+    border-color: $btnGreyLight;
+    color: $btnGreyLight;
+    }
 }
